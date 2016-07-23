@@ -5,6 +5,36 @@
  * @version 2.0
  * @link http://chopstack.com
  */
+// custom url font.
+@font-face {
+    font-family: 'UrlFont';
+    font-style: normal;
+    src: local('Menlo'), local('Consolas'), local('monospace');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.tagcloud a {
+    font-family: UrlFont;
+}
+
+#sidebar .widget ul li {
+    font-family: UrlFont;
+}
+
+.post .post-meta {
+    font-family: UrlFont;
+}
+.post .post-content {
+    font-family: UrlFont;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI",
+    "Hiragino Sans GB", "Source Han Sans CN", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+}
+
 
 body {
     background-color: #FFF;
@@ -271,6 +301,7 @@ div {
                 display: inline-block;
                 margin: 0 5px;
                 padding: 0 5px;
+                font-family: UrlFont;
                 background: #f7f8f8;
             }
             a {
@@ -280,6 +311,7 @@ div {
                 &:hover {
                     text-decoration: underline;
                 }
+                font-family: Menlo, Consolas, monospace;
             }
             .caption {
                 color: #444;
